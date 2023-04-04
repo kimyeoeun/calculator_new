@@ -15,11 +15,20 @@ class View(QWidget):
         self.te1 = QPlainTextEdit()
         self.te1.setReadOnly(True)
         
+<<<<<<< HEAD
         self.btn1=QPushButton('Message',self)
+=======
+        self.btn1=QPushButton('Calc',self)
+>>>>>>> 7397955acc92dbf90f580169c2c4894a2f859115
         self.btn2=QPushButton('Clear',self)
         
         self.le1=QLineEdit('0',self)
         self.le1.setAlignment(QtCore.Qt.AlignRight)
+<<<<<<< HEAD
+=======
+        self.le1.setFocus(True)
+        self.le1.selectAll()
+>>>>>>> 7397955acc92dbf90f580169c2c4894a2f859115
         
         self.le2=QLineEdit('0',self)
         self.le2.setAlignment(QtCore.Qt.AlignRight)
@@ -50,8 +59,13 @@ class View(QWidget):
         self.resize(256,256)
         self.show()
         
+<<<<<<< HEAD
     def activateMessage(self, text):
         self.te1.appendPlainText(text)
+=======
+    def setDisplay(self):
+        self.te1.appendPlainText("Button clicked!")
+>>>>>>> 7397955acc92dbf90f580169c2c4894a2f859115
         
     def clearMessage(self):
         self.te1.clear()
